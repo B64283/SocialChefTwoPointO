@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249AE7801D5B073B00CADCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */; };
+		249AE7821D5B073B00CADCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7811D5B073B00CADCE4 /* ViewController.swift */; };
+		249AE7851D5B073B00CADCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7831D5B073B00CADCE4 /* Main.storyboard */; };
+		249AE7881D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7861D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld */; };
+		249AE78A1D5B073B00CADCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7891D5B073B00CADCE4 /* Assets.xcassets */; };
+		249AE78D1D5B073B00CADCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249AE78B1D5B073B00CADCE4 /* LaunchScreen.storyboard */; };
+		249AE7981D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7971D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift */; };
+		249AE7A31D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7A21D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		249AE7941D5B073B00CADCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249AE7741D5B073B00CADCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249AE77B1D5B073B00CADCE4;
+			remoteInfo = SocialChefTwoPointO;
+		};
+		249AE79F1D5B073B00CADCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249AE7741D5B073B00CADCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249AE77B1D5B073B00CADCE4;
+			remoteInfo = SocialChefTwoPointO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		249AE77C1D5B073B00CADCE4 /* SocialChefTwoPointO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialChefTwoPointO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		249AE7811D5B073B00CADCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		249AE7841D5B073B00CADCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		249AE7871D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialChefTwoPointO.xcdatamodel; sourceTree = "<group>"; };
+		249AE7891D5B073B00CADCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		249AE78C1D5B073B00CADCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		249AE78E1D5B073B00CADCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249AE7931D5B073B00CADCE4 /* SocialChefTwoPointOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialChefTwoPointOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		249AE7971D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChefTwoPointOTests.swift; sourceTree = "<group>"; };
+		249AE7991D5B073B00CADCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249AE79E1D5B073B00CADCE4 /* SocialChefTwoPointOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialChefTwoPointOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		249AE7A21D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChefTwoPointOUITests.swift; sourceTree = "<group>"; };
+		249AE7A41D5B073B00CADCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		249AE7791D5B073B00CADCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE7901D5B073B00CADCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE79B1D5B073B00CADCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249AE7731D5B073B00CADCE4 = {
+			isa = PBXGroup;
+			children = (
+				249AE77E1D5B073B00CADCE4 /* SocialChefTwoPointO */,
+				249AE7961D5B073B00CADCE4 /* SocialChefTwoPointOTests */,
+				249AE7A11D5B073B00CADCE4 /* SocialChefTwoPointOUITests */,
+				249AE77D1D5B073B00CADCE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		249AE77D1D5B073B00CADCE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				249AE77C1D5B073B00CADCE4 /* SocialChefTwoPointO.app */,
+				249AE7931D5B073B00CADCE4 /* SocialChefTwoPointOTests.xctest */,
+				249AE79E1D5B073B00CADCE4 /* SocialChefTwoPointOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		249AE77E1D5B073B00CADCE4 /* SocialChefTwoPointO */ = {
+			isa = PBXGroup;
+			children = (
+				249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */,
+				249AE7811D5B073B00CADCE4 /* ViewController.swift */,
+				249AE7831D5B073B00CADCE4 /* Main.storyboard */,
+				249AE7891D5B073B00CADCE4 /* Assets.xcassets */,
+				249AE78B1D5B073B00CADCE4 /* LaunchScreen.storyboard */,
+				249AE78E1D5B073B00CADCE4 /* Info.plist */,
+				249AE7861D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld */,
+			);
+			path = SocialChefTwoPointO;
+			sourceTree = "<group>";
+		};
+		249AE7961D5B073B00CADCE4 /* SocialChefTwoPointOTests */ = {
+			isa = PBXGroup;
+			children = (
+				249AE7971D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift */,
+				249AE7991D5B073B00CADCE4 /* Info.plist */,
+			);
+			path = SocialChefTwoPointOTests;
+			sourceTree = "<group>";
+		};
+		249AE7A11D5B073B00CADCE4 /* SocialChefTwoPointOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				249AE7A21D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift */,
+				249AE7A41D5B073B00CADCE4 /* Info.plist */,
+			);
+			path = SocialChefTwoPointOUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		249AE77B1D5B073B00CADCE4 /* SocialChefTwoPointO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249AE7A71D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointO" */;
+			buildPhases = (
+				249AE7781D5B073B00CADCE4 /* Sources */,
+				249AE7791D5B073B00CADCE4 /* Frameworks */,
+				249AE77A1D5B073B00CADCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialChefTwoPointO;
+			productName = SocialChefTwoPointO;
+			productReference = 249AE77C1D5B073B00CADCE4 /* SocialChefTwoPointO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		249AE7921D5B073B00CADCE4 /* SocialChefTwoPointOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249AE7AA1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOTests" */;
+			buildPhases = (
+				249AE78F1D5B073B00CADCE4 /* Sources */,
+				249AE7901D5B073B00CADCE4 /* Frameworks */,
+				249AE7911D5B073B00CADCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				249AE7951D5B073B00CADCE4 /* PBXTargetDependency */,
+			);
+			name = SocialChefTwoPointOTests;
+			productName = SocialChefTwoPointOTests;
+			productReference = 249AE7931D5B073B00CADCE4 /* SocialChefTwoPointOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		249AE79D1D5B073B00CADCE4 /* SocialChefTwoPointOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249AE7AD1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOUITests" */;
+			buildPhases = (
+				249AE79A1D5B073B00CADCE4 /* Sources */,
+				249AE79B1D5B073B00CADCE4 /* Frameworks */,
+				249AE79C1D5B073B00CADCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				249AE7A01D5B073B00CADCE4 /* PBXTargetDependency */,
+			);
+			name = SocialChefTwoPointOUITests;
+			productName = SocialChefTwoPointOUITests;
+			productReference = 249AE79E1D5B073B00CADCE4 /* SocialChefTwoPointOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		249AE7741D5B073B00CADCE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matthew Darke";
+				TargetAttributes = {
+					249AE77B1D5B073B00CADCE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					249AE7921D5B073B00CADCE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 249AE77B1D5B073B00CADCE4;
+					};
+					249AE79D1D5B073B00CADCE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 249AE77B1D5B073B00CADCE4;
+					};
+				};
+			};
+			buildConfigurationList = 249AE7771D5B073B00CADCE4 /* Build configuration list for PBXProject "SocialChefTwoPointO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 249AE7731D5B073B00CADCE4;
+			productRefGroup = 249AE77D1D5B073B00CADCE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				249AE77B1D5B073B00CADCE4 /* SocialChefTwoPointO */,
+				249AE7921D5B073B00CADCE4 /* SocialChefTwoPointOTests */,
+				249AE79D1D5B073B00CADCE4 /* SocialChefTwoPointOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		249AE77A1D5B073B00CADCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249AE78D1D5B073B00CADCE4 /* LaunchScreen.storyboard in Resources */,
+				249AE78A1D5B073B00CADCE4 /* Assets.xcassets in Resources */,
+				249AE7851D5B073B00CADCE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE7911D5B073B00CADCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE79C1D5B073B00CADCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		249AE7781D5B073B00CADCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249AE7881D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld in Sources */,
+				249AE7821D5B073B00CADCE4 /* ViewController.swift in Sources */,
+				249AE7801D5B073B00CADCE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE78F1D5B073B00CADCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249AE7981D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249AE79A1D5B073B00CADCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249AE7A31D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		249AE7951D5B073B00CADCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249AE77B1D5B073B00CADCE4 /* SocialChefTwoPointO */;
+			targetProxy = 249AE7941D5B073B00CADCE4 /* PBXContainerItemProxy */;
+		};
+		249AE7A01D5B073B00CADCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249AE77B1D5B073B00CADCE4 /* SocialChefTwoPointO */;
+			targetProxy = 249AE79F1D5B073B00CADCE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		249AE7831D5B073B00CADCE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249AE7841D5B073B00CADCE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		249AE78B1D5B073B00CADCE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249AE78C1D5B073B00CADCE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249AE7A51D5B073B00CADCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		249AE7A61D5B073B00CADCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		249AE7A81D5B073B00CADCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		249AE7A91D5B073B00CADCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		249AE7AB1D5B073B00CADCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialChefTwoPointOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialChefTwoPointO.app/SocialChefTwoPointO";
+			};
+			name = Debug;
+		};
+		249AE7AC1D5B073B00CADCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialChefTwoPointOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialChefTwoPointO.app/SocialChefTwoPointO";
+			};
+			name = Release;
+		};
+		249AE7AE1D5B073B00CADCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialChefTwoPointOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialChefTwoPointO;
+			};
+			name = Debug;
+		};
+		249AE7AF1D5B073B00CADCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialChefTwoPointOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialChefTwoPointO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		249AE7771D5B073B00CADCE4 /* Build configuration list for PBXProject "SocialChefTwoPointO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249AE7A51D5B073B00CADCE4 /* Debug */,
+				249AE7A61D5B073B00CADCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249AE7A71D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249AE7A81D5B073B00CADCE4 /* Debug */,
+				249AE7A91D5B073B00CADCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		249AE7AA1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249AE7AB1D5B073B00CADCE4 /* Debug */,
+				249AE7AC1D5B073B00CADCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		249AE7AD1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249AE7AE1D5B073B00CADCE4 /* Debug */,
+				249AE7AF1D5B073B00CADCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		249AE7861D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				249AE7871D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodel */,
+			);
+			currentVersion = 249AE7871D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodel */;
+			path = SocialChefTwoPointO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 249AE7741D5B073B00CADCE4 /* Project object */;
+}
