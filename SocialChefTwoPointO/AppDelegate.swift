@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       
+        
+        
+        //setup config for using parse code in Heroku
+        let parseConfig = ParseClientConfiguration {(ParseMutableClientConfiguration) in
+            
+            //accsessing heroku app via api and keys
+            ParseMutableClientConfiguration.applicationId = "socialchefID736akjjsjjdhdhgfgfgjskkapp"
+            
+            ParseMutableClientConfiguration.clientKey = "socialcheffffffffiieepphjdsfkjoidajhbd278238guhdsbajsh"
+            
+            ParseMutableClientConfiguration.server = "http://SocialChef.herokuapp.com/parse"
+            
+            
+        }
+        
+        Parse.initializeWithConfiguration(parseConfig)
+        
+        
+        
         return true
     }
 

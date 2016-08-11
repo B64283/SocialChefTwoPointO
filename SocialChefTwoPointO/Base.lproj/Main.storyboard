@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialChefTwoPointO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ta9-MS-OA9">
+                                <rect key="frame" x="96" y="82" width="408" height="218"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvd-EB-2EH">
+                                <rect key="frame" x="195" y="449" width="211" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pWY-CM-cZQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zza-Zx-SSU">
+                                <rect key="frame" x="195" y="351" width="211" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YAO-no-qMg"/>
+                                    <constraint firstAttribute="width" constant="211" id="bPe-RQ-MIo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6a-Xo-eL9">
+                                <rect key="frame" x="195" y="403" width="211" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2El-ho-cSr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zza-Zx-SSU" firstAttribute="leading" secondItem="L6a-Xo-eL9" secondAttribute="leading" id="1xn-ZK-yYy"/>
+                            <constraint firstItem="Cvd-EB-2EH" firstAttribute="top" secondItem="L6a-Xo-eL9" secondAttribute="bottom" constant="25" id="6iz-UV-HDj"/>
+                            <constraint firstItem="Zza-Zx-SSU" firstAttribute="top" secondItem="ta9-MS-OA9" secondAttribute="bottom" constant="51" id="N2P-3e-usD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cvd-EB-2EH" secondAttribute="bottom" constant="130" id="TS7-Xl-cYz"/>
+                            <constraint firstItem="ta9-MS-OA9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zl4-oX-OGv"/>
+                            <constraint firstItem="L6a-Xo-eL9" firstAttribute="leading" secondItem="Cvd-EB-2EH" secondAttribute="leading" id="dhA-am-TpA"/>
+                            <constraint firstItem="L6a-Xo-eL9" firstAttribute="trailing" secondItem="Cvd-EB-2EH" secondAttribute="trailing" id="ecZ-Vf-W51"/>
+                            <constraint firstItem="ta9-MS-OA9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="fMh-Hw-Oo2"/>
+                            <constraint firstItem="ta9-MS-OA9" firstAttribute="centerX" secondItem="Zza-Zx-SSU" secondAttribute="centerX" id="iB7-TP-qRb"/>
+                            <constraint firstItem="L6a-Xo-eL9" firstAttribute="top" secondItem="Zza-Zx-SSU" secondAttribute="bottom" constant="31" id="jMH-gK-UG8"/>
+                            <constraint firstItem="Zza-Zx-SSU" firstAttribute="trailing" secondItem="L6a-Xo-eL9" secondAttribute="trailing" id="mBI-xH-LmG"/>
+                            <constraint firstItem="ta9-MS-OA9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="yWs-k1-GzA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SenderLbl" destination="Zza-Zx-SSU" id="5Tn-BU-x0R"/>
+                        <outlet property="messageLbl" destination="Cvd-EB-2EH" id="SIB-ca-r1G"/>
+                        <outlet property="picture" destination="ta9-MS-OA9" id="MvV-jA-pDK"/>
+                        <outlet property="receiverLbl" destination="L6a-Xo-eL9" id="XAI-HS-5WZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="250" y="121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background1.png" width="1334" height="750"/>
+    </resources>
 </document>

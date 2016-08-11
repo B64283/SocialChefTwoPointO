@@ -15,6 +15,19 @@
 		249AE78D1D5B073B00CADCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249AE78B1D5B073B00CADCE4 /* LaunchScreen.storyboard */; };
 		249AE7981D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7971D5B073B00CADCE4 /* SocialChefTwoPointOTests.swift */; };
 		249AE7A31D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7A21D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift */; };
+		249AE7B11D5B078C00CADCE4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7B01D5B078C00CADCE4 /* libsqlite3.tbd */; };
+		249AE7B31D5B07AF00CADCE4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7B21D5B07AF00CADCE4 /* libz.tbd */; };
+		249AE7B51D5B07BE00CADCE4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7B41D5B07BE00CADCE4 /* AudioToolbox.framework */; };
+		249AE7B71D5B07D200CADCE4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7B61D5B07D200CADCE4 /* CFNetwork.framework */; };
+		249AE7B91D5B07E200CADCE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7B81D5B07E200CADCE4 /* CoreGraphics.framework */; };
+		249AE7BB1D5B07FA00CADCE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7BA1D5B07FA00CADCE4 /* CoreLocation.framework */; };
+		249AE7BD1D5B080C00CADCE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7BC1D5B080C00CADCE4 /* QuartzCore.framework */; };
+		249AE7BF1D5B081E00CADCE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7BE1D5B081E00CADCE4 /* Security.framework */; };
+		249AE7C11D5B083100CADCE4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C01D5B083100CADCE4 /* StoreKit.framework */; };
+		249AE7C31D5B084200CADCE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */; };
+		249AE7C61D5B09AA00CADCE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C41D5B09AA00CADCE4 /* Bolts.framework */; };
+		249AE7C71D5B09AA00CADCE4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C51D5B09AA00CADCE4 /* Parse.framework */; };
+		249AE7C91D5B160F00CADCE4 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7C81D5B160F00CADCE4 /* background1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		249AE79E1D5B073B00CADCE4 /* SocialChefTwoPointOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialChefTwoPointOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		249AE7A21D5B073B00CADCE4 /* SocialChefTwoPointOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChefTwoPointOUITests.swift; sourceTree = "<group>"; };
 		249AE7A41D5B073B00CADCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249AE7B01D5B078C00CADCE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		249AE7B21D5B07AF00CADCE4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		249AE7B41D5B07BE00CADCE4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		249AE7B61D5B07D200CADCE4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		249AE7B81D5B07E200CADCE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		249AE7BA1D5B07FA00CADCE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		249AE7BC1D5B080C00CADCE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		249AE7BE1D5B081E00CADCE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		249AE7C01D5B083100CADCE4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		249AE7C41D5B09AA00CADCE4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		249AE7C51D5B09AA00CADCE4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		249AE7C81D5B160F00CADCE4 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249AE7C31D5B084200CADCE4 /* SystemConfiguration.framework in Frameworks */,
+				249AE7C11D5B083100CADCE4 /* StoreKit.framework in Frameworks */,
+				249AE7BF1D5B081E00CADCE4 /* Security.framework in Frameworks */,
+				249AE7BD1D5B080C00CADCE4 /* QuartzCore.framework in Frameworks */,
+				249AE7BB1D5B07FA00CADCE4 /* CoreLocation.framework in Frameworks */,
+				249AE7B91D5B07E200CADCE4 /* CoreGraphics.framework in Frameworks */,
+				249AE7B71D5B07D200CADCE4 /* CFNetwork.framework in Frameworks */,
+				249AE7B51D5B07BE00CADCE4 /* AudioToolbox.framework in Frameworks */,
+				249AE7C61D5B09AA00CADCE4 /* Bolts.framework in Frameworks */,
+				249AE7B31D5B07AF00CADCE4 /* libz.tbd in Frameworks */,
+				249AE7C71D5B09AA00CADCE4 /* Parse.framework in Frameworks */,
+				249AE7B11D5B078C00CADCE4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +117,18 @@
 		249AE7731D5B073B00CADCE4 = {
 			isa = PBXGroup;
 			children = (
+				249AE7C41D5B09AA00CADCE4 /* Bolts.framework */,
+				249AE7C51D5B09AA00CADCE4 /* Parse.framework */,
+				249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */,
+				249AE7C01D5B083100CADCE4 /* StoreKit.framework */,
+				249AE7BE1D5B081E00CADCE4 /* Security.framework */,
+				249AE7BC1D5B080C00CADCE4 /* QuartzCore.framework */,
+				249AE7BA1D5B07FA00CADCE4 /* CoreLocation.framework */,
+				249AE7B81D5B07E200CADCE4 /* CoreGraphics.framework */,
+				249AE7B61D5B07D200CADCE4 /* CFNetwork.framework */,
+				249AE7B41D5B07BE00CADCE4 /* AudioToolbox.framework */,
+				249AE7B21D5B07AF00CADCE4 /* libz.tbd */,
+				249AE7B01D5B078C00CADCE4 /* libsqlite3.tbd */,
 				249AE77E1D5B073B00CADCE4 /* SocialChefTwoPointO */,
 				249AE7961D5B073B00CADCE4 /* SocialChefTwoPointOTests */,
 				249AE7A11D5B073B00CADCE4 /* SocialChefTwoPointOUITests */,
@@ -100,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */,
+				249AE7C81D5B160F00CADCE4 /* background1.png */,
 				249AE7811D5B073B00CADCE4 /* ViewController.swift */,
 				249AE7831D5B073B00CADCE4 /* Main.storyboard */,
 				249AE7891D5B073B00CADCE4 /* Assets.xcassets */,
@@ -235,6 +286,7 @@
 				249AE78D1D5B073B00CADCE4 /* LaunchScreen.storyboard in Resources */,
 				249AE78A1D5B073B00CADCE4 /* Assets.xcassets in Resources */,
 				249AE7851D5B073B00CADCE4 /* Main.storyboard in Resources */,
+				249AE7C91D5B160F00CADCE4 /* background1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
@@ -416,6 +472,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
