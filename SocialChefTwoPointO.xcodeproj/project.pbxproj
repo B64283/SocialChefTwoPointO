@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245D39641D70BD8A00C3DA58 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 245D39621D70BD8A00C3DA58 /* Pacifico.ttf */; };
+		245D39651D70BD8A00C3DA58 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 245D39631D70BD8A00C3DA58 /* SIL Open Font License.txt */; };
+		245D39671D70C20900C3DA58 /* bGSignIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 245D39661D70C20900C3DA58 /* bGSignIn.png */; };
+		245D39691D70C75600C3DA58 /* bGSC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 245D39681D70C75600C3DA58 /* bGSC.jpg */; };
+		245D396B1D7F3DDF00C3DA58 /* signUpBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 245D396A1D7F3DDF00C3DA58 /* signUpBg.jpg */; };
+		245D396D1D81CBC600C3DA58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D396C1D81CBC600C3DA58 /* HomeViewController.swift */; };
+		245D396F1D81CC0300C3DA58 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D396E1D81CC0300C3DA58 /* HeaderView.swift */; };
+		245D39711D81CF7300C3DA58 /* RecipeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D39701D81CF7300C3DA58 /* RecipeImageCell.swift */; };
+		245D39731D89CBB800C3DA58 /* followersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D39721D89CBB800C3DA58 /* followersViewController.swift */; };
+		245D39751D89CBF100C3DA58 /* followersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D39741D89CBF100C3DA58 /* followersCell.swift */; };
+		245D39771D91030300C3DA58 /* guestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D39761D91030300C3DA58 /* guestViewController.swift */; };
 		249AE7801D5B073B00CADCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */; };
-		249AE7821D5B073B00CADCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7811D5B073B00CADCE4 /* ViewController.swift */; };
 		249AE7851D5B073B00CADCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7831D5B073B00CADCE4 /* Main.storyboard */; };
 		249AE7881D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7861D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld */; };
 		249AE78A1D5B073B00CADCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7891D5B073B00CADCE4 /* Assets.xcassets */; };
@@ -25,9 +35,18 @@
 		249AE7BF1D5B081E00CADCE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7BE1D5B081E00CADCE4 /* Security.framework */; };
 		249AE7C11D5B083100CADCE4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C01D5B083100CADCE4 /* StoreKit.framework */; };
 		249AE7C31D5B084200CADCE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */; };
-		249AE7C61D5B09AA00CADCE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C41D5B09AA00CADCE4 /* Bolts.framework */; };
-		249AE7C71D5B09AA00CADCE4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AE7C51D5B09AA00CADCE4 /* Parse.framework */; };
-		249AE7C91D5B160F00CADCE4 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 249AE7C81D5B160F00CADCE4 /* background1.png */; };
+		249AE7CC1D5C584E00CADCE4 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7CB1D5C584E00CADCE4 /* signInViewController.swift */; };
+		249AE7CE1D5C589300CADCE4 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7CD1D5C589300CADCE4 /* signUpViewController.swift */; };
+		249AE7D01D5C58D900CADCE4 /* resetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249AE7CF1D5C58D900CADCE4 /* resetPasswordViewController.swift */; };
+		24B20EB61D94500800D530ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB41D94500800D530ED /* Bolts.framework */; };
+		24B20EB71D94500800D530ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB51D94500800D530ED /* Parse.framework */; };
+		24B20EBD1D94AC5400D530ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EBC1D94AC5400D530ED /* Foundation.framework */; };
+		24B20EC01D94AEF700D530ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EBF1D94AEF700D530ED /* AVFoundation.framework */; };
+		24B20EC21D94AF2F00D530ED /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EC11D94AF2F00D530ED /* CoreFoundation.framework */; };
+		24B20EC61D94AF9700D530ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB41D94500800D530ED /* Bolts.framework */; };
+		24B20EC71D94AF9900D530ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB41D94500800D530ED /* Bolts.framework */; };
+		24B20EC81D94AFA100D530ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB51D94500800D530ED /* Parse.framework */; };
+		24B20EC91D94AFA200D530ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B20EB51D94500800D530ED /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +67,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245D39621D70BD8A00C3DA58 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pacifico.ttf; path = pacificoFonts/Pacifico.ttf; sourceTree = "<group>"; };
+		245D39631D70BD8A00C3DA58 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		245D39661D70C20900C3DA58 /* bGSignIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bGSignIn.png; sourceTree = "<group>"; };
+		245D39681D70C75600C3DA58 /* bGSC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bGSC.jpg; sourceTree = "<group>"; };
+		245D396A1D7F3DDF00C3DA58 /* signUpBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUpBg.jpg; sourceTree = "<group>"; };
+		245D396C1D81CBC600C3DA58 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		245D396E1D81CC0300C3DA58 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		245D39701D81CF7300C3DA58 /* RecipeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeImageCell.swift; sourceTree = "<group>"; };
+		245D39721D89CBB800C3DA58 /* followersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = followersViewController.swift; sourceTree = "<group>"; };
+		245D39741D89CBF100C3DA58 /* followersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = followersCell.swift; sourceTree = "<group>"; };
+		245D39761D91030300C3DA58 /* guestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = guestViewController.swift; sourceTree = "<group>"; };
 		249AE77C1D5B073B00CADCE4 /* SocialChefTwoPointO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialChefTwoPointO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		249AE7811D5B073B00CADCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		249AE7841D5B073B00CADCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		249AE7871D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialChefTwoPointO.xcdatamodel; sourceTree = "<group>"; };
 		249AE7891D5B073B00CADCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,9 +101,14 @@
 		249AE7BE1D5B081E00CADCE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		249AE7C01D5B083100CADCE4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		249AE7C41D5B09AA00CADCE4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		249AE7C51D5B09AA00CADCE4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		249AE7C81D5B160F00CADCE4 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		249AE7CB1D5C584E00CADCE4 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		249AE7CD1D5C589300CADCE4 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		249AE7CF1D5C58D900CADCE4 /* resetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
+		24B20EB41D94500800D530ED /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		24B20EB51D94500800D530ED /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		24B20EBC1D94AC5400D530ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24B20EBF1D94AEF700D530ED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24B20EC11D94AF2F00D530ED /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B20EC21D94AF2F00D530ED /* CoreFoundation.framework in Frameworks */,
+				24B20EC01D94AEF700D530ED /* AVFoundation.framework in Frameworks */,
+				24B20EBD1D94AC5400D530ED /* Foundation.framework in Frameworks */,
 				249AE7C31D5B084200CADCE4 /* SystemConfiguration.framework in Frameworks */,
 				249AE7C11D5B083100CADCE4 /* StoreKit.framework in Frameworks */,
 				249AE7BF1D5B081E00CADCE4 /* Security.framework in Frameworks */,
@@ -90,9 +127,9 @@
 				249AE7B91D5B07E200CADCE4 /* CoreGraphics.framework in Frameworks */,
 				249AE7B71D5B07D200CADCE4 /* CFNetwork.framework in Frameworks */,
 				249AE7B51D5B07BE00CADCE4 /* AudioToolbox.framework in Frameworks */,
-				249AE7C61D5B09AA00CADCE4 /* Bolts.framework in Frameworks */,
+				24B20EB61D94500800D530ED /* Bolts.framework in Frameworks */,
 				249AE7B31D5B07AF00CADCE4 /* libz.tbd in Frameworks */,
-				249AE7C71D5B09AA00CADCE4 /* Parse.framework in Frameworks */,
+				24B20EB71D94500800D530ED /* Parse.framework in Frameworks */,
 				249AE7B11D5B078C00CADCE4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B20EC81D94AFA100D530ED /* Parse.framework in Frameworks */,
+				24B20EC61D94AF9700D530ED /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,31 +147,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B20EC91D94AFA200D530ED /* Parse.framework in Frameworks */,
+				24B20EC71D94AF9900D530ED /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245D39611D70BD8A00C3DA58 /* pacificoFonts */ = {
+			isa = PBXGroup;
+			children = (
+				245D39631D70BD8A00C3DA58 /* SIL Open Font License.txt */,
+			);
+			path = pacificoFonts;
+			sourceTree = "<group>";
+		};
 		249AE7731D5B073B00CADCE4 = {
 			isa = PBXGroup;
 			children = (
-				249AE7C41D5B09AA00CADCE4 /* Bolts.framework */,
-				249AE7C51D5B09AA00CADCE4 /* Parse.framework */,
-				249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */,
-				249AE7C01D5B083100CADCE4 /* StoreKit.framework */,
-				249AE7BE1D5B081E00CADCE4 /* Security.framework */,
-				249AE7BC1D5B080C00CADCE4 /* QuartzCore.framework */,
-				249AE7BA1D5B07FA00CADCE4 /* CoreLocation.framework */,
-				249AE7B81D5B07E200CADCE4 /* CoreGraphics.framework */,
-				249AE7B61D5B07D200CADCE4 /* CFNetwork.framework */,
-				249AE7B41D5B07BE00CADCE4 /* AudioToolbox.framework */,
 				249AE7B21D5B07AF00CADCE4 /* libz.tbd */,
 				249AE7B01D5B078C00CADCE4 /* libsqlite3.tbd */,
 				249AE77E1D5B073B00CADCE4 /* SocialChefTwoPointO */,
 				249AE7961D5B073B00CADCE4 /* SocialChefTwoPointOTests */,
 				249AE7A11D5B073B00CADCE4 /* SocialChefTwoPointOUITests */,
 				249AE77D1D5B073B00CADCE4 /* Products */,
+				249AE7CA1D5C57C600CADCE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,14 +189,26 @@
 		249AE77E1D5B073B00CADCE4 /* SocialChefTwoPointO */ = {
 			isa = PBXGroup;
 			children = (
+				245D39721D89CBB800C3DA58 /* followersViewController.swift */,
+				245D39761D91030300C3DA58 /* guestViewController.swift */,
+				245D39741D89CBF100C3DA58 /* followersCell.swift */,
+				245D396C1D81CBC600C3DA58 /* HomeViewController.swift */,
+				245D396E1D81CC0300C3DA58 /* HeaderView.swift */,
+				245D39701D81CF7300C3DA58 /* RecipeImageCell.swift */,
+				249AE7CD1D5C589300CADCE4 /* signUpViewController.swift */,
+				249AE7CB1D5C584E00CADCE4 /* signInViewController.swift */,
+				249AE7CF1D5C58D900CADCE4 /* resetPasswordViewController.swift */,
 				249AE77F1D5B073B00CADCE4 /* AppDelegate.swift */,
-				249AE7C81D5B160F00CADCE4 /* background1.png */,
-				249AE7811D5B073B00CADCE4 /* ViewController.swift */,
 				249AE7831D5B073B00CADCE4 /* Main.storyboard */,
 				249AE7891D5B073B00CADCE4 /* Assets.xcassets */,
 				249AE78B1D5B073B00CADCE4 /* LaunchScreen.storyboard */,
 				249AE78E1D5B073B00CADCE4 /* Info.plist */,
 				249AE7861D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld */,
+				245D396A1D7F3DDF00C3DA58 /* signUpBg.jpg */,
+				245D39621D70BD8A00C3DA58 /* Pacifico.ttf */,
+				245D39661D70C20900C3DA58 /* bGSignIn.png */,
+				245D39681D70C75600C3DA58 /* bGSC.jpg */,
+				245D39611D70BD8A00C3DA58 /* pacificoFonts */,
 			);
 			path = SocialChefTwoPointO;
 			sourceTree = "<group>";
@@ -177,6 +229,27 @@
 				249AE7A41D5B073B00CADCE4 /* Info.plist */,
 			);
 			path = SocialChefTwoPointOUITests;
+			sourceTree = "<group>";
+		};
+		249AE7CA1D5C57C600CADCE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24B20EC11D94AF2F00D530ED /* CoreFoundation.framework */,
+				24B20EBF1D94AEF700D530ED /* AVFoundation.framework */,
+				24B20EBC1D94AC5400D530ED /* Foundation.framework */,
+				24B20EB41D94500800D530ED /* Bolts.framework */,
+				24B20EB51D94500800D530ED /* Parse.framework */,
+				249AE7C21D5B084200CADCE4 /* SystemConfiguration.framework */,
+				249AE7C01D5B083100CADCE4 /* StoreKit.framework */,
+				249AE7BE1D5B081E00CADCE4 /* Security.framework */,
+				249AE7BC1D5B080C00CADCE4 /* QuartzCore.framework */,
+				249AE7BA1D5B07FA00CADCE4 /* CoreLocation.framework */,
+				249AE7B81D5B07E200CADCE4 /* CoreGraphics.framework */,
+				249AE7B61D5B07D200CADCE4 /* CFNetwork.framework */,
+				249AE7B41D5B07BE00CADCE4 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = SocialChefTwoPointO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,18 +315,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Matthew Darke";
 				TargetAttributes = {
 					249AE77B1D5B073B00CADCE4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DUTJGRZM3B;
+						LastSwiftMigration = 0800;
 					};
 					249AE7921D5B073B00CADCE4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 249AE77B1D5B073B00CADCE4;
 					};
 					249AE79D1D5B073B00CADCE4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 249AE77B1D5B073B00CADCE4;
 					};
 				};
@@ -283,10 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245D39671D70C20900C3DA58 /* bGSignIn.png in Resources */,
 				249AE78D1D5B073B00CADCE4 /* LaunchScreen.storyboard in Resources */,
+				245D396B1D7F3DDF00C3DA58 /* signUpBg.jpg in Resources */,
+				245D39651D70BD8A00C3DA58 /* SIL Open Font License.txt in Resources */,
 				249AE78A1D5B073B00CADCE4 /* Assets.xcassets in Resources */,
+				245D39691D70C75600C3DA58 /* bGSC.jpg in Resources */,
+				245D39641D70BD8A00C3DA58 /* Pacifico.ttf in Resources */,
 				249AE7851D5B073B00CADCE4 /* Main.storyboard in Resources */,
-				249AE7C91D5B160F00CADCE4 /* background1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +393,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				249AE7881D5B073B00CADCE4 /* SocialChefTwoPointO.xcdatamodeld in Sources */,
-				249AE7821D5B073B00CADCE4 /* ViewController.swift in Sources */,
+				245D39771D91030300C3DA58 /* guestViewController.swift in Sources */,
+				249AE7CC1D5C584E00CADCE4 /* signInViewController.swift in Sources */,
+				249AE7CE1D5C589300CADCE4 /* signUpViewController.swift in Sources */,
+				245D39711D81CF7300C3DA58 /* RecipeImageCell.swift in Sources */,
+				249AE7D01D5C58D900CADCE4 /* resetPasswordViewController.swift in Sources */,
+				245D39731D89CBB800C3DA58 /* followersViewController.swift in Sources */,
 				249AE7801D5B073B00CADCE4 /* AppDelegate.swift in Sources */,
+				245D39751D89CBF100C3DA58 /* followersCell.swift in Sources */,
+				245D396D1D81CBC600C3DA58 /* HomeViewController.swift in Sources */,
+				245D396F1D81CC0300C3DA58 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +471,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -428,8 +519,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -448,6 +541,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -457,14 +551,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DUTJGRZM3B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
 				);
 				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -472,14 +569,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DUTJGRZM3B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
 				);
 				INFOPLIST_FILE = SocialChefTwoPointO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -487,10 +587,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointOTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialChefTwoPointO.app/SocialChefTwoPointO";
 			};
 			name = Debug;
@@ -499,10 +604,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointOTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialChefTwoPointO.app/SocialChefTwoPointO";
 			};
 			name = Release;
@@ -510,10 +620,15 @@
 		249AE7AE1D5B073B00CADCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointOUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SocialChefTwoPointO;
 			};
 			name = Debug;
@@ -521,10 +636,15 @@
 		249AE7AF1D5B073B00CADCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialChefTwoPointO",
+				);
 				INFOPLIST_FILE = SocialChefTwoPointOUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fullsail.demoApp.SocialChefTwoPointOUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SocialChefTwoPointO;
 			};
 			name = Release;
@@ -548,6 +668,7 @@
 				249AE7A91D5B073B00CADCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		249AE7AA1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +677,7 @@
 				249AE7AC1D5B073B00CADCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		249AE7AD1D5B073B00CADCE4 /* Build configuration list for PBXNativeTarget "SocialChefTwoPointOUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +686,7 @@
 				249AE7AF1D5B073B00CADCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
