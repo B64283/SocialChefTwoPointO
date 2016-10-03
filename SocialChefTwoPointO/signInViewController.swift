@@ -16,6 +16,7 @@ class signInViewController: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
 
     @IBOutlet weak var signUpButton: UIButton!
+    
     @IBOutlet weak var signInButton: UIButton!
     
     
@@ -53,7 +54,7 @@ class signInViewController: UIViewController {
         
         
         //tap hides keyboard
-    let tapHideKeyboard = UITapGestureRecognizer(target: self, action: Selector(("hideKeyBoardTap")))
+    let tapHideKeyboard = UITapGestureRecognizer(target: signInViewController(), action: Selector(("hideKeyBoardTap")))
         
         tapHideKeyboard.numberOfTapsRequired = 1
         self.view.isUserInteractionEnabled = true
@@ -81,8 +82,8 @@ class signInViewController: UIViewController {
    //sign in button
     @IBAction func signInBtn_click(sender: AnyObject) {
     
-    print("sign in button clicked")
-        
+        print("sign in button clicked")
+ 
       //hide keyboard
         self.view.endEditing(true)
         
@@ -97,10 +98,10 @@ class signInViewController: UIViewController {
             
         }
         //login function  ()
-        PFUser.logInWithUsername(inBackground: userNameTxt.text!, password:passwordTxt.text!, block: { (user: PFUser?, error: Error?) in
-            
-            
-            if error == nil {
+        
+        PFUser.logInWithUsername(inBackground: userNameTxt.text!, password: passwordTxt.text!) { (user:PFUser?, error:Error?) in
+        
+    if error == nil {
                 
                 //saves username in app memory
                 UserDefaults.standard.set(user!.username, forKey:"username")
@@ -110,10 +111,11 @@ class signInViewController: UIViewController {
                 let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.login()
                 
-                
-                
-                
-            }else {
+        
+    
+           }else {
+        
+        
                 
                 //ALERT MESSAGE with localized error description
                 let alertMessage = UIAlertController(title:"Error", message:error!.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
@@ -123,7 +125,7 @@ class signInViewController: UIViewController {
                 self.present(alertMessage, animated: true, completion: nil)
                 
             }
-        })
+        }
     
     }
     

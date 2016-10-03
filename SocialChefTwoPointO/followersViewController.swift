@@ -33,6 +33,8 @@ class followersViewController: UITableViewController {
       //shows which Title at top (followers or following) declared in home vc
         self.navigationItem.title = shows
         
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
        //loads followers when tapped on followers
         if shows == "followers"{ //declaired in homeViewController
@@ -224,14 +226,14 @@ class followersViewController: UITableViewController {
 
 
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return usernameArray.count
         
     }
 
     
-     func tableView( tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! followersCell
 
@@ -302,7 +304,7 @@ class followersViewController: UITableViewController {
     
     
     
-     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
         let cell = tableView.cellForRow(at: indexPath as IndexPath) as! followersCell
@@ -313,7 +315,7 @@ class followersViewController: UITableViewController {
         if cell.usernameLbl.text! == PFUser.current()!.username! {
             
 let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            self.navigationController?.pushViewController(home, animated: true)
+            self.navigationController!.pushViewController(home, animated: true)
    
         
         }else{
@@ -323,7 +325,7 @@ let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewC
             guestName.append(cell.usernameLbl.text!)
             
             let guest = self.storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! guestViewController
-            self.navigationController?.pushViewController(guest, animated: true)
+            self.navigationController!.pushViewController(guest, animated: true)
             
         }
     

@@ -46,14 +46,15 @@ class guestViewController: UICollectionViewController {
         //swipe to go back
         self.navigationItem.hidesBackButton = true
         
-        let backBtn = UIBarButtonItem(title: "back", style:UIBarButtonItemStyle.plain, target: self, action: Selector(("back")))
+       // fixed this for Swift 3
+        let backBtn = UIBarButtonItem(title: "back", style:UIBarButtonItemStyle.plain, target: self, action: #selector(guestViewController.back))
         
-        self.navigationItem.leftBarButtonItem = backBtn
+            self.navigationItem.leftBarButtonItem = backBtn
         
         
         
-        
-        let swipeBack = UISwipeGestureRecognizer(target: self, action:Selector(("back")))
+        // fixed this for Swift 3
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(guestViewController.back))
         
         swipeBack.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeBack)
@@ -74,11 +75,11 @@ class guestViewController: UICollectionViewController {
 
   
     
-  //back funct
-    func back(sender: UIBarButtonItem){
+  //FIXED back funct
+    func back(_ sender: UIBarButtonItem){
         
         //push back
-       self.navigationController?.popViewController(animated: true)
+       self.navigationController!.popViewController(animated: true)
 
         //clean guest username
         if !guestName.isEmpty {
@@ -157,7 +158,8 @@ class guestViewController: UICollectionViewController {
     
     
     //num of cells
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 numberOfItemsInSection section: Int) -> Int {
         
         return uuidArry.count
     }
@@ -165,7 +167,7 @@ class guestViewController: UICollectionViewController {
     
     
     //cell configure
-     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)as! RecipeImageCell
@@ -205,7 +207,7 @@ class guestViewController: UICollectionViewController {
     
     //header configuer
     
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         //header set up
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath as IndexPath)as! HeaderView
@@ -234,7 +236,7 @@ class guestViewController: UICollectionViewController {
                     
                     //find related data for user
                     //grabs users data from server collumns in PFUser class (ObjectForKey)
-                    header.nameLbl.text = (object.value(forKey: "fullName")as? String)
+                    header.nameLbl.text = (object.value(forKey: "fullName")as? String)?.uppercased()
                     
                     header.webTxt.text = (object.value(forKey: "webSite") as? String)
                     header.webTxt.sizeToFit()

@@ -74,7 +74,7 @@ class resetPasswordViewController: UIViewController {
     
     
    //cancel button function
-    @IBAction func cancelBtnClick(sender: AnyObject) {
+    @IBAction func cancelBtnClick(_ sender: AnyObject) {
         
         self.dismiss(animated: true, completion: nil)
         self.view.endEditing(true)

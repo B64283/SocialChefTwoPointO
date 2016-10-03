@@ -35,7 +35,7 @@ class HeaderView: UICollectionReusableView {
         super.awakeFromNib()
         
         //alignment
-    /*
+    
         let width = UIScreen.main.bounds.width
         profImg.frame = CGRect(x: width / 16, y: width / 16, width: width / 4, height: width / 4)
         
@@ -55,15 +55,15 @@ class HeaderView: UICollectionReusableView {
         button.frame = CGRect(x: postsTitle.frame.origin.x, y: postsTitle.center.y + 20, width: width - postsTitle.frame.origin.x - 10, height: 30)
         
         
-        nameLbl.frame = CGRect(x: profImg.frame.origin.x, y: profImg.frame.origin.y + profImg.frame.size.height, width: width - 20, heigth: 30)
+        nameLbl.frame = CGRect(x:profImg.frame.origin.x, y: profImg.frame.origin.y + profImg.frame.size.height, width: width - 20, height: 30)
         
         webTxt.frame = CGRect(x: profImg.frame.origin.x - 5,y: nameLbl.frame.origin.y + 15,width: width - 30,height: 30)
         
         bioTxt.frame = CGRect(x: profImg.frame.origin.x,y: webTxt.frame.origin.y + 30,width: width - 30, height: 30)
         
-    */
+    
         
-        
+   
         
         
 

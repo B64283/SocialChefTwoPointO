@@ -24,7 +24,7 @@ class HomeViewController: UICollectionViewController {
     
     
     
-    override func viewDidLoad() {
+       override func viewDidLoad() {
         super.viewDidLoad()
 
        // allows to scroll vertically
@@ -119,7 +119,8 @@ class HomeViewController: UICollectionViewController {
     
     
    //num of cells
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 numberOfItemsInSection section: Int) -> Int {
         
        return picArray.count
     }
@@ -127,10 +128,11 @@ class HomeViewController: UICollectionViewController {
    
     
     //cell configure
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)as! RecipeImageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)as! RecipeImageCell
         
         //get pic from picArray [indexPath.row]
         picArray[indexPath.row].getDataInBackground { (data:Data?, error:Error?) in
@@ -156,13 +158,13 @@ class HomeViewController: UICollectionViewController {
     
   //header configuer
     
- func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+ override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
        //header set up
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath as IndexPath)as! HeaderView
        
         //grabs users data from server collumns in PFUser class (ObjectForKey)
-        header.nameLbl.text = (PFUser.current()?.object(forKey: "fullName") as? String)
+        header.nameLbl.text = (PFUser.current()?.object(forKey: "fullName") as? String)?.uppercased()
     
         header.webTxt.text = PFUser.current()?.object(forKey: "webSite") as? String
         header.webTxt.sizeToFit()

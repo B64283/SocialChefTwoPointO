@@ -15,8 +15,9 @@ class signUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     
      @IBOutlet weak var addLable: UILabel!
    
+    @IBOutlet weak var profImg: UIImageView!
     
-     weak var profImg: UIImageView!
+    //@IBOutlet weak var profImg: UIImageView!
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var reEntrPasswordTxt: UITextField!
@@ -52,16 +53,19 @@ class signUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         //tells if keyboard is showing or not. Selector for function (showKeyboard)
         
-NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(signUpViewController.showKeyboard(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+
+        
+        
         
         //selector hideKeyBoard for function (hideKeyBoard)
         
-        NotificationCenter.defaultCenter().addObserver(self, selector:"hideKeyboard", name: UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(hideKeyboard), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
 
         
        
         //selector hideKeyBoardTap for function (hideKeyBoardTap)
-        let hideTap = UITapGestureRecognizer(target: self, action: "hideKeyBoardTap")
+        let hideTap = UITapGestureRecognizer(target: self, action: #selector(signUpViewController.hideKeyBoardTap(_:)))
         
         hideTap.numberOfTapsRequired = 1
        
@@ -79,7 +83,7 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
         
      //declairs selector for loadProfImage function
-        let profileImageTap = UITapGestureRecognizer(target: self, action: "loadProfImage")
+        let profileImageTap = UITapGestureRecognizer(target: signUpViewController(), action: Selector(("loadProfImage")))
     
      profileImageTap.numberOfTapsRequired = 1
      profImg.isUserInteractionEnabled = true
@@ -124,7 +128,7 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
 
     
     //load profile image function calling picker
-    func loadProfImage(recognizer: UITapGestureRecognizer){
+    func loadProfImage(_ recognizer: UITapGestureRecognizer){
         
 ///////// can enter code to choose to take a photo or choose a phot in album//////////////
         
@@ -142,7 +146,9 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
     
     //adds users chosen image to UIImageView for profile image
-    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+    
         
     profImg.image = info[UIImagePickerControllerEditedImage] as? UIImage
     self.dismiss(animated: true, completion: nil)
@@ -154,7 +160,7 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
  
     //func hideKeyBoardTap UITapGestureRecognizer
-    func hideKeyBoardTap(recognizer: UITapGestureRecognizer){
+    func hideKeyBoardTap(_ recognizer: UITapGestureRecognizer){
         
         self.view.endEditing(true)
         
@@ -163,10 +169,11 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
     
    //func showKeyboard
-    func showKeyboard(notification:NSNotification) {
+    func showKeyboard(_ notification :NSNotification) {
         
         //defines size of the keyboard
-        keyBoard = ((notification.userInfo?[UIKeyboardFrameEndUserInfoKey]! as AnyObject).cgRectValue)!
+        keyBoard = ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey]! as AnyObject).cgRectValue)!
+        
         //moves up the scrollview uI
         UIView.animate(withDuration: 0.5) {
             self.scrollView.frame.size.height = self.scrollViewHeight - self.keyBoard.height
@@ -175,7 +182,7 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
         }
     
 //func hideKeyboard
-    func hideKeyboard(notification:NSNotification) {
+    func hideKeyboard(_ notification:NSNotification) {
         
        //slides down scrollview UI
         UIView.animate(withDuration: 0.5) {
@@ -187,7 +194,7 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
 
   //signup Button action
-    @IBAction func signUpButton_click(sender: AnyObject) {
+    @IBAction func signUpButton_click(_ sender: AnyObject) {
         
         //dismiss keyboard
         self.view.endEditing(true)
@@ -216,13 +223,14 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
         
        //sends user data to server
         let user = PFUser()
-        user.username = usernameTxt.text?.lowercased
-        user.email = emailTxt.text?.lowercaseString
+        user.username = usernameTxt.text
+        
+        user.email = emailTxt.text
+
         user.password = passwordTxt.text
-        user["fullName"] = fullNameTxt.text?.lowercaseString
+        user["fullName"] = fullNameTxt.text
         user["bio"] = bioTxt.text
-        user["webSite"] = webTxt.text?.lowercaseString
-      
+        user["webSite"] = webTxt.text
         //in edit profile will be assigned
         user["tel"] = ""
         user["Gender"] = ""
@@ -234,20 +242,22 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
         
         
         //SAVE DATA TO SERVER
-        user .signUpInBackgroundWithBlock { (Sucsess: Bool, error: NSError?) in
-            if (Sucsess){
+        user .signUpInBackground { (success: Bool, error: Error?) in
+            
+        
+            if (success){
                 
                 print("Regestration sucsess!")
                 //add alert and dismiss controller
                 
                 
                //keeps user from haveing to sign after app closes saves username on device
-                NSUserDefaults.standardUserDefaults().setObject(user.username, forKey: "username")
+                UserDefaults.standard.set(user.username, forKey: "username")
                 //saves username
-                NSUserDefaults.standardUserDefaults().synchronize()
+                UserDefaults.standard.synchronize()
                 
                 //calls login function from appdelegate
-                let appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
            
                 //calls login function from appdelegate
             appDelegate.login()
@@ -255,11 +265,11 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
             } else {
                 
                 //ALERT MESSAGE with localized error description
-                let alertMessage = UIAlertController(title:"Error", message:error!.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                let alertMessage = UIAlertController(title:"Error", message:error!.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                 
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil)
+                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
                 alertMessage.addAction(ok)
-                self.presentViewController(alertMessage, animated: true, completion: nil)
+                self.present(alertMessage, animated: true, completion: nil)
 
                 //print(error?.localizedDescription)
             }
@@ -271,9 +281,9 @@ NSNotification.addObserver(self, selector:"showKeyboar", name: UIKeyboardWillSho
     
     
   //cancel Button action
-    @IBAction func cancelButton_click(sender: AnyObject) {
+    @IBAction func cancelButton_click(_ sender: AnyObject) {
     print("cancel tapped")
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
         
        //closes keyboard
         self.view.endEditing(true)

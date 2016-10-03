@@ -21,7 +21,7 @@ class followersCell: UITableViewCell {
         
     }
 
-    @IBAction func click_FollowBtn(sender: AnyObject) {
+    @IBAction func click_FollowBtn(_ sender: AnyObject) {
         
         let title = followingBtn.title(for: .normal)
         
@@ -87,8 +87,9 @@ class followersCell: UITableViewCell {
         
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        setSelected(selected, animated: animated)
+   //fixed func
+    func setSelected(selected: Bool, animated: Bool) {
+        setSelected(selected: selected, animated: animated)
         
         // Configure the view for the selected state
     }
